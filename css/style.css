@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #FF800F;
+    /* --primary: #121212; */
     --secondary: #001064;
     --light: #F6F7F8;
     --dark: #010A35;
@@ -299,7 +300,7 @@
 
 
 /*** Service ***/
-.service-item .service-icon {
+/* .service-item .service-icon {
     width: 90px;
     height: 90px;
     display: flex;
@@ -310,6 +311,18 @@
 .service-item .service-icon img {
     max-width: 60px;
     max-height: 60px;
+} */
+.service-item .service-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item .service-icon img {
+    max-width: 30px;
+    max-height: 30px;
 }
 
 
@@ -483,4 +496,71 @@
 
 .footer .copyright a:hover {
     color: #FFFFFF;
+}
+@media (max-width: 576px) { 
+    /* Styles for mobile screens */
+    .image-container-top {
+        width: 90%; /* Set the div width */
+        height: auto; /* Set the div height */
+        margin: auto;
+        
+    }
+    
+    .image-container-top img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+
+.img-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    object-fit: contain;  /* Ensures the image maintains aspect ratio and fits within the container */
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-container img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+a:hover .img-container img {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Click effect */
+a:active .img-container img {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.glow-effect {
+    border: 3px solid #9a9a9a;
+    box-shadow: 0 0 10px #000000;
+}
+.glow-text {
+    font-weight: bold;
+   
+}
+.image-container-top {
+    width: 100%; /* Set the div width */
+}
+
+.image-container-top img {
+    max-width: 100%;
+    height: 80vh;
+    margin: auto;
+    display: block;
 }

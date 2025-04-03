@@ -528,11 +528,15 @@
 }
 .img-container {
     overflow: hidden;
+    position: relative;
     border-radius: 8px;
 }
 
 .img-container img {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    display: block;
+    
 }
 
 /* Hover effect */
@@ -580,8 +584,7 @@ a:active .img-container img {
 }
 
 .service-item {
-    background: white;
-    
+    overflow: hidden;
     border-radius: 15px;
     border: 2px solid transparent;
     animation: glowing-border 1.5s infinite alternate;
@@ -593,6 +596,7 @@ a:active .img-container img {
     100% { border-color: #FF800F; box-shadow: 0 0 5px #FF800F; }
 }
 .service-item a {
+    
     display: block;
     position: relative;
     text-align: center;
@@ -604,4 +608,8 @@ a:active .img-container img {
 .service-item a:active {
     transform: scale(0.95);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.step-box p{
+    font-weight: bolder;
+    color: #000000;
 }

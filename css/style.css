@@ -564,3 +564,17 @@ a:active .img-container img {
     margin: auto;
     display: block;
 }
+.step-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.step-box i {
+    font-size: 30px;
+    color: #FF800F;
+    display: block;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}

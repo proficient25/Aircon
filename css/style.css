@@ -30,6 +30,9 @@
     opacity: 1;
 }
 
+h2{
+    text-align: center;
+}
 
 /*** Button ***/
 .btn {
@@ -573,6 +576,8 @@ a:active .img-container img {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Thin, light gray border */
+    border-radius: 8px; /* Optional: Rounded corners */
 }
 .step-box i {
     font-size: 30px;

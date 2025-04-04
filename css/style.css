@@ -618,3 +618,16 @@ a:active .img-container img {
     font-weight: bolder;
     color: #000000;
 }
+.navbar-brand h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+}
+
+.text-primary {
+    color: #007bff; /* Blue for trust */
+}
+
+.text-warning {
+    color: #ff9800; /* Orange for energy */
+}
+

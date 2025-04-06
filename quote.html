@@ -121,52 +121,82 @@
     <div class="container-fluid overflow-hidden px-lg-0" style="margin: 6rem 0;">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
+             
+                <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+                    <div class="h-100  px-sm-5 pe-lg-0 wow fadeIn " data-wow-delay="0.1s">
+                        
+                        <div class="container bg-white p-4">
+            <!-- <h2 align="center">Service Request Form</h2> -->
+            <form>
+                <!-- Full Name -->
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+              
+                <!-- Mobile No -->
+                <div class="mb-3">
+                  <label for="mobileNo" class="form-label">Mobile No</label>
+                  <input type="tel" id="mobile" name="mobile" class="form-control"
+                  pattern="[0-9]{10}" maxlength="10" minlength="10" required
+                  placeholder="Enter 10-digit mobile number">
+                </div>
+                
+              
+                <!-- Select Appliance -->
+                <div class="mb-3">
+                  <label for="appliance" class="form-label">Select Appliance</label>
+                  <select class="form-select" id="appliance" required>
+                    <option value="" disabled selected>Select an appliance</option>
+                    <option value="Washing Machine">Washing Machine</option>
+                    <option value="Refrigerator">Refrigerator</option>
+                    <option value="Air Conditioner">Air Conditioner</option>
+                    <option value="Microwave">Microwave</option>
+                    <option value="Dishwasher">Chimney</option>
+                    <option value="Dishwasher">Geyser</option>
+                  </select>
+                </div>
+              
+                <!-- Select Brand Of Appliance -->
+                <div class="mb-3">
+                  <label for="brand" class="form-label">Select Brand Of Appliance</label>
+                  <select class="form-select" id="brand" required>
+                    <option value="" disabled selected>Select brand</option>
+                  </select>
+                </div>
+              
+                <!-- Service Type -->
+                <div class="mb-3 mx-auto">
+                  <div class="d-flex justify-content-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="serviceCheckbox" name="service">
+                      <label class="form-check-label" for="serviceCheckbox">Service</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="repairCheckbox" name="repair">
+                      <label class="form-check-label" for="repairCheckbox">Repair</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="installCheckbox" name="install">
+                      <label class="form-check-label" for="installCheckbox">Install/Uninstall</label>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+          </div>
+        
+                    </div>
+                </div>
                 <div class="col-lg-6 quote-text" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-                    <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="text-white mb-4">For Individuals And Organisations</h1>
                         <p class="text-light mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                         <a href="" class="align-self-start btn btn-primary py-3 px-5">More Details</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-                    <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="bg-white p-4 p-sm-5">
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email">
-                                        <label for="gmail">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cname" placeholder="Child Name">
-                                        <label for="cname">Your Mobile</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cage" placeholder="Child Age">
-                                        <label for="cage">Service Type</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">Get A Free Quote</button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
